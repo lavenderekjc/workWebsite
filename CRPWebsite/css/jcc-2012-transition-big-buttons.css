@@ -1,0 +1,366 @@
+#splash-container {
+	display: block;
+	width: 995px;
+	margin-top: 8px
+}
+.pr_listens, .pr_recconnect, .pr_tall, .pr_ul, .pr_ul_white {
+	color: #FFF;
+	height: 25px;
+	width: 184px;
+	font-size: .8em;
+	font-weight: 700
+}
+#pr_ul_white {
+	margin-top: -10px;
+	color: #CCC;
+	background-color: #FFF;
+	display: block;
+	width: 175px;
+	border-right: 5px solid #dcdcdc;
+	border-left: 5px solid #dcdcdc;
+	border-bottom: 5px solid #dcdcdc;
+	margin-bottom: 5px
+}
+.pr_tall {
+	height: 55px
+}
+.pr_listens {
+	height: 85px
+}
+.pr_recconnect {
+	height: 68px
+}
+#leftmenu, #rightmenu {
+	margin-left: 5px;
+	margin-top: 10px;
+	background-color: #fff;
+	border: 0;
+	width: 190px;
+	padding: 0 0 0 5px
+}
+#rightmenu {
+	padding-left: 0;
+	border: 5px solid #338506;
+	background-color: #fff0c7
+}
+#leftmenu a {
+	padding-left: 10px;
+	padding-top: 5px
+}
+#rightmenu a {
+	margin-left: 0
+}
+#menu_foot {
+	height: 12px
+}
+.pr_headline {
+	color: #FFF;
+	font-weight: 700;
+	font-size: .85em;
+	width: 188px;
+	background-color: #338506;
+	padding: 3px
+}
+ul.menu_vertical-ul {
+	margin: 0
+}
+, .menu_vertical-ul a:link, .menu_vertical-ul a:visited {
+color:#333;
+text-decoration:none;
+padding-left:0
+}
+.menu_vertical-ul a:hover {
+	padding-left: 0
+}
+.menu_vertical-ul li {
+	color: #fff;
+	margin: 0;
+	padding: 0
+}
+#feature_box {
+	background-color: #598527;
+	width: 765px;
+	display: block
+}
+#feature_box_top {
+	color: #FFF;
+	width: 765px;
+	background-image: url(../images/recreation/parks-new/layout/feature-top.jpg);
+	background-position: top left;
+	background-repeat: no-repeat
+}
+#feature_box_bottom {
+	color: #FFF;
+	width: 765px;
+	background-image: url(../images/recreation/parks-new/layout/feature-bottom.jpg);
+	background-position: bottom left;
+	background-repeat: no-repeat
+}
+#feature_box p {
+	padding-left: 5px;
+	font-size: .8em
+}
+#topper-rt {
+	background-image: url(../images/recreation/parks-new/layout/topper-rt-1.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 15px
+}
+#bottomer-rt {
+	background-image: url(../images/recreation/parks-new/layout/footer-rt-1.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 15px
+}
+#rec-connect {
+	background-image: url(../images/recreation/parks-new/ballon-backer.gif);
+	background-position: top;
+	background-repeat: no-repeat
+}
+#maincontent a:link, #maincontent a:visited {
+	color: #03F
+}
+h1 {
+	border: 0;
+	font-size: 1.25em;
+	color: #007ac3;
+	text-transform: uppercase;
+	font-weight: 700
+}
+h2 {
+	border: 0;
+	font-size: 1.25em;
+	color: #007ac3
+}
+h3 {
+	border: 0;
+	text-decoration: underline;
+	font-size: 1.25em;
+	color: #000
+}
+img.update {
+	float: left;
+	margin-right: 2px;
+	border: .5px solid #FFF
+}
+#feature_wrap-grn {
+	border: 2px solid #338506;
+	padding: 8px;
+	margin-bottom: 5px
+}
+#feature_wrap-blue {
+	border: 2px solid #007ac3;
+	padding: 8px;
+	margin-bottom: 5px
+}
+#feature_wrap-brown {
+	border: 2px solid #76583A;
+	padding: 8px;
+	margin-bottom: 5px
+}
+#feature_wrap-red {
+	border: 2px solid #c41230;
+	padding: 8px;
+	margin-bottom: 5px
+}
+.grt-prk-pst {
+	font-size: .8em;
+	font-weight: 700;
+	color: #366;
+	margin-top: 2px;
+	padding: 5px;
+	border: 1px solid #C60;
+	display: block;
+	height: 45px;
+	background-color: #CC9
+}
+ul.menu_vertical-ul {
+	list-style: inside url(../images/bullets/bullet-cp.gif);
+	line-height: 1.3em;
+	font-size: .8em
+}
+.menu_vertical-ul a:link, .menu_vertical-ul a:visited {
+	color: #333;
+	text-decoration: none
+}
+.menu_vertical-ul a:hover {
+	color: #FC6;
+	text-decoration: underline
+}
+#leftmenu .menu_vertical-ul a:hover, #leftmenu .menu_vertical-ul a:link, #leftmenu .menu_vertical-ul a:visited {
+	padding-left: 1px;
+	padding-top: 2px
+}
+#text-size {
+	margin-bottom: 0
+}
+h1.headline, h2.headline, h3.headline {
+	margin-top: -25px;
+	border: 0
+}
+table.headline {
+	margin-top: -25px
+}
+#crumb, #crumb1 {
+	background-image: url(../images/buttons/bread-crumb-img-blu.gif);
+	background-color: #0079c2;
+	border: 2px solid #fff
+}
+a.pr_menu:hover, a.pr_menu:link, a.pr_menu:visited, a.pr_submenu:link, a.pr_submenu:visited {
+	text-decoration: none;
+	color: #FFF;
+	width: 184px;
+	display: block;
+	height: 45px;
+	margin-bottom: 1px;
+	background-image: url(../images/recreation/parks-new/layout/button-back-a-2012.jpg);
+	background-repeat: no-repeat
+}
+a.pr_menu:hover, a.pr_submenu:hover {
+	background-image: url(../images/recreation/parks-new/layout/button-back-hv-a.jpg);
+	background-repeat: no-repeat
+}
+a.pr_submenu:link, a.pr_submenu:visited {
+	margin-bottom: 0;
+	width: 184px;
+	padding-left: 10px;
+	margin-top: 0
+}
+a.pr_alt:hover, a.pr_alt:link, a.pr_alt:visited {
+	text-decoration: none;
+	color: #FFF;
+	width: 184px;
+	display: block;
+	height: 85px;
+	background-image: url(../images/recreation/parks-new/layout/button-back-blu.jpg);
+	background-repeat: no-repeat
+}
+a.pr_alt:hover {
+	background-image: url(../images/recreation/parks-new/layout/pr_listens-hv-a.jpg);
+	background-repeat: no-repeat
+}
+a.pr_alt1:hover, a.pr_alt1:link, a.pr_alt1:visited {
+	text-decoration: none;
+	color: #FFF;
+	width: 184px;
+	display: block;
+	height: 68px;
+	background-image: url(../images/recreation/parks-new/layout/pr_recconnect-blu.jpg);
+	background-repeat: no-repeat
+}
+a.pr_alt1:hover {
+	background-image: url(../images/recreation/parks-new/layout/pr_recconnect-hv-a.jpg);
+	background-repeat: no-repeat
+}
+#pageNamePR {
+	margin-top: 0;
+	width: 995px;
+	height: 75px;
+	border-top: 0 solid #666;
+	background-image: url(../images/headerMN2sm.png);
+	background-repeat: no-repeat;
+	background-position: top left
+}
+#flash {
+	visibility: hidden
+}
+body {
+	color: #000;
+	background-color: #0079c2;
+	background-image: none
+}
+#content {
+	border: 2px solid #fff;
+	border-top: 0
+}
+#masthead {
+	background-color: #0079c2;
+	height: 80px;
+	margin-bottom: 10px
+}
+#masthead-foot {
+	visibility: hidden
+}
+#footer {
+	clear: both;
+	text-align: center;
+	width: 983px;
+	border-top: 1px silver solid;
+	padding: 5px;
+	color: #fff;
+	background-color: #006a51;
+	margin: 10px 1px 1px
+}
+.search_bar {
+	float: right;
+	position: relative;
+	width: 19em;
+	height: 2em;
+	margin: 0
+}
+.hidden, .hiddenCS1, .hiddenCS2, .hiddenHR {
+	display: none
+}
+#widget-box {
+	border: 2px solid silver;
+	padding: 10px;
+	float: right;
+	width: 90px;
+	height: 90px;
+	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	background-color: #fff
+}
+#widget-box img {
+	margin-right: 3px
+}
+.subtext-grn {
+	color: #006a51;
+	font-size: 1em;
+	font-weight: 700;
+	padding-left: 5px
+}
+.subtext-blu {
+	color: #0079c2;
+	font-size: 1em;
+	font-weight: 700;
+	padding-left: 5px
+}
+.subtext-red {
+	color: #c41230;
+	font-size: 1em;
+	font-weight: 700;
+	padding-left: 5px
+}
+#foundation {
+	clear: both;
+	text-align: center;
+	width: 99%;
+	border-top: 1px silver solid;
+	padding: 4px;
+	color: #fff;
+	background: #006a51;
+	margin: 10px 1px 1px
+}
+#foundation p {
+	color: #fff;
+	font-size: .7em;
+	text-align: center;
+	margin-top: 5px
+}
+#foundation p.footer {
+	margin: 10px 0 5px
+}
+#foundation a {
+	color: #fff;
+	text-decoration: none
+}
+#footer a:link, #footer a:visited, #foundation a.foundation:link, #foundation a.foundation:visited, a.footer:link, a.footer:visited {
+	text-decoration: none;
+	color: #fff
+}
+#footer a:hover, #foundation a.foundation:hover, a.footer:hover {
+	text-decoration: underline;
+	color: #cd5c5c
+}
