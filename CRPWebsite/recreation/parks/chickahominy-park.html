@@ -176,7 +176,7 @@ img.bdr-grn1 {
 *
 *
 -->
-<!-- This needs to be moved into the appropriate .css file -->
+<!-- This maybe needs to be moved into the appropriate .css file -->
 <style>
 h2{
 	color:#072752;
@@ -231,7 +231,6 @@ h2{
 	border-color:black;
 	width: 110px;
 	height: 55px;
-	/*Needed to vertically center*/
 	display: table;
 	margin-left:11px;
 	cursor: pointer;
@@ -240,7 +239,6 @@ h2{
 }
 .tabButton p{
 	text-align:center;
-	/*Needed to vertically center*/
 	display: table-cell;
     vertical-align: middle;
 	font-weight: bold;
@@ -272,9 +270,9 @@ h2{
 	font-weight: bold;
 }
 </style>
-<!--May need to be moved to it's own file-->
-<script>
 
+<!--May need to be moved to its own file-->
+<script>
 //Set to 0 and change #tabContent1 + #tabButton1 css rule to display:none to start with all closed tabs
 var activeTabNum=1;
 function tabClick(num){
@@ -287,7 +285,7 @@ function tabClick(num){
 			activeTab.style.backgroundColor="#017AC3";
 			activeTab.style.borderBottomColor="black";
 			activeTab.style.color="white";
-			}
+		}
 		document.getElementById("tabContent"+num).style.display="block";
 		document.getElementById("tabButton"+num).style.borderBottomRightRadius="0px";
 		document.getElementById("tabButton"+num).style.borderBottomLeftRadius="0px";
@@ -295,22 +293,23 @@ function tabClick(num){
 		document.getElementById("tabButton"+num).style.borderBottomColor="#73C5F6";
 		document.getElementById("tabButton"+num).style.color="black";
 		activeTabNum=num;
-	}
+  }
 }
 function displayImages(){
 	var imgs=document.getElementById("imgSlider").getElementsByTagName('img');
 	imgs[0].style.display="block";
 	var i=0;
 	setInterval(function(){
-	imgs[i].style.display="none";
-	i++;
-	if(i>=imgs.length)
-		i=0;
-	imgs[i].style.display="block";
+  	imgs[i].style.display="none";
+  	i++;
+  	if(i>=imgs.length)
+  		i=0;
+  	imgs[i].style.display="block";
 	}
 	,5000);//end of setInterval function call
 }
 </script>
+
 <a href="https://www.google.com/maps/place/1350+John+Tyler+Hwy,+Williamsburg,+VA+23185/@37.2649957,-76.8721392,17z/data=!4m2!3m1!1s0x89b0f59fe3e9c4b5:0x63758eb08000cb52">Directions</a>
 <br><br><br>
 <div id="crpSidebar">
@@ -320,14 +319,14 @@ function displayImages(){
 	</div>
 	<br><br>
 	<div id="usefulLinks">
-	<h2>Useful Links</h2>
-	<ul>
-	<li><a href="../../pdf/parksrecpdfs/Flyers-all/rangerpub web page 2012.pdf" target="_blank">Find a Park Ranger</a></li>
-	<li><a href="http://www.jamescitycountyva.gov/recreation/parks/parks-facilities.html" target="_blank">Park Finder</a></li>
-	<li><a href="http://www.jamescitycountyva.gov/recreation/rent-a-space.html" target="_blank">Shelter Reservations</a></li>
-	<li><a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Flyers-all/AdoptAParkBrochure-Sept2014.pdf" target="_blank">Adopt-A-Park</a></li>
-	<li><a href="../../redirect/redirect.php?l=http://www.williamsburgboatclub.org" target="_blank" rel="nofollow" >Williamsburg Boat Club</a></li>
-	</ul>
+  	<h2>Useful Links</h2>
+  	<ul>
+    	<li><a href="../../pdf/parksrecpdfs/Flyers-all/rangerpub web page 2012.pdf" target="_blank">Find a Park Ranger</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/recreation/parks/parks-facilities.html" target="_blank">Park Finder</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/recreation/rent-a-space.html" target="_blank">Shelter Reservations</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Flyers-all/AdoptAParkBrochure-Sept2014.pdf" target="_blank">Adopt-A-Park</a></li>
+    	<li><a href="../../redirect/redirect.php?l=http://www.williamsburgboatclub.org" target="_blank" rel="nofollow" >Williamsburg Boat Club</a></li>
+  	</ul>
 	</div>
 </div>
 <p class="bodytext">Come enjoy this 140-acre park located on  the Chickahominy River.&nbsp; This park has something for every member of your  family to  enjoy.&nbsp; Facilities include two outdoor swimming pools, boat  ramp, fishing pier, camp sites, a playground, picnic shelters, a small store  and access to the Virginia Capital Trail.&nbsp; You can bring your own boat or  rent one at the park to enjoy fishing or exploring the Chickahominy River and  Gordon Creek.&nbsp; There is&nbsp;space&nbsp;for monthly rental of boat and RV storage. The large fields and picnic shelters are available for  special events.
@@ -336,27 +335,26 @@ function displayImages(){
 <table width="65%" border="1" align="center" cellpadding="0" cellspacing="0">
 	<th style="background-color:#017AC3; color:white;" colspan=3>Store Hours</th>
 	<tr>
-	<td ><p align="left" class="bodytext">October    1, 2014 &ndash; May 21, 2015</p></td>
-	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    5 p.m.</p></td>
+  	<td ><p align="left" class="bodytext">October    1, 2014 &ndash; May 21, 2015</p></td>
+  	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    5 p.m.</p></td>
 	</tr>
 	<tr>
-	<td ><p align="left" class="bodytext">May 22,    2015 &ndash; September 7, 2015</p></td>
-	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    8 p.m.</p></td>
+  	<td ><p align="left" class="bodytext">May 22,    2015 &ndash; September 7, 2015</p></td>
+  	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    8 p.m.</p></td>
 	</tr>
 	<tr>
-	<td ><p align="left" class="bodytext">September    8, 2015 &ndash; May 26, 2016</p></td>
-	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    5 p.m.</p></td>
+  	<td ><p align="left" class="bodytext">September    8, 2015 &ndash; May 26, 2016</p></td>
+  	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    5 p.m.</p></td>
 	</tr>
 	<tr>
-	<td ><p align="left" class="bodytext">Holiday    Closings:<a href="http://www.jamescitycountyva.gov/recreation/parks/holiday-closings.html"> click here</a></p></td>
-	<td width="50%"><p align="center">&nbsp;</p></td>
+  	<td ><p align="left" class="bodytext">Holiday    Closings:<a href="http://www.jamescitycountyva.gov/recreation/parks/holiday-closings.html"> click here</a></p></td>
+  	<td width="50%"><p align="center">&nbsp;</p></td>
 	</tr>
 </table>
 <br>
 <h2>Campground Map</h2>
 <a href="../../pdf/parksrecpdfs/Maps-all/CRPParkmap.pdf" target="_blank"><img width="55%" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img></a>
-<br>
-<br>
+<br><br>
 <hr>
 <div id="allTabButtons">
 	<div id="tabButton1" class="tabButton" onclick="tabClick(1)"><p>Camping</p></div>
@@ -375,47 +373,47 @@ function displayImages(){
 		<a href="../../pdf/parksrecpdfs/Maps-all/CRPParkmap.pdf" target="_blank">Campground Map</a>
 		<br><br>
 		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
-		<th colspan=3>Store Hours</th>
-		<tr>
-		<td width="213" valign="top" class="bodytext">&nbsp;</td>
-		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Basic</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$22</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$26</div></td>
-		</tr>
-		<tr>
-		<td valign="top" class="bodytext">Basic Water Access</td>
-		<td valign="top" class="bodytext"><div align="center">$24</div></td>
-		<td valign="top" class="bodytext"><div align="center">$28</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$24</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$28</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Water/Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$26</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$30</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Prime Water/Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$32</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$36</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Prime Water/Electric/Sewer</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$38</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$42</div></td>
-		</tr>
-		<tr>
-		<td height="20" valign="top" class="bodytext">Monthly, September - April</td>
-		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
-		<td valign="top" class="bodytext">&nbsp;</td>
-		</tr>
+  		<th colspan=3>Store Hours</th>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Basic</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$22</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$26</div></td>
+  		</tr>
+  		<tr>
+    		<td valign="top" class="bodytext">Basic Water Access</td>
+    		<td valign="top" class="bodytext"><div align="center">$24</div></td>
+    		<td valign="top" class="bodytext"><div align="center">$28</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$24</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$28</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Water/Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$26</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$30</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Prime Water/Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$32</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$36</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Prime Water/Electric/Sewer</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$38</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$42</div></td>
+  		</tr>
+  		<tr>
+    		<td height="20" valign="top" class="bodytext">Monthly, September - April</td>
+    		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
+    		<td valign="top" class="bodytext">&nbsp;</td>
+  		</tr>
 		</table>
 		<br>
 	</div> <!End Camping content>
@@ -424,176 +422,176 @@ function displayImages(){
 		<p class="bodytext">
 		Canoes,   kayaks and jon boats are available for rent at Chickahominy Riverfront Park.&nbsp; There is a two-hour minimum for all boat rentals, and rentals must be returned at least 90 minutes before the store closes. To rent a boat, you will need to visit the park store for a rental agreement, complete the agreement and pay the rental fee.&nbsp; Our staff will  set up  your boat which includes all necessary equipment, such as life jackets, oars, and  paddles.&nbsp;</p>
 		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
-		<th colspan=3>CRP Boat/Ramp Rental Fees</th>
-		<tr>
-		<td width="347" valign="top"><p>&nbsp;</p></td>
-		<td width="169" valign="top"><p align="center" class="bodytext"><strong>Resident</strong></p></td>
-		<td width="245" valign="top"><p align="center" class="bodytext"><strong>Nonresident</strong></p></td>
-		</tr>
-		<tr>
-		<td width="347" valign="top"><p class="bodytext">Boat Launch (annual)</p></td>
-		<td width="169" valign="top"><p align="center" class="bodytext">$75</p></td>
-		<td width="245" valign="top"><p align="center" class="bodytext">$100</p></td>
-		</tr>
-		<tr>
-		<td width="347" valign="top"><p class="bodytext">Boat Launch (semi-annual)</p></td>
-		<td width="169" valign="top"><p align="center" class="bodytext">$40</p></td>
-		<td width="245" valign="top"><p align="center" class="bodytext">$60</p></td>
-		</tr>
-		<tr>
-		<td valign="top"><span class="bodytext">Boat Launch</span></td>
-		<td valign="top"><div align="center" class="bodytext">$5</div></td>
-		<td valign="top"><div align="center" class="bodytext">$8</div></td>
-		</tr>
-		<tr>
-		<td width="347" valign="top"><p class="bodytext">Canoe and Kayak Launch</p></td>
-		<td width="169" valign="top"><p align="center" class="bodytext">$2</p></td>
-		<td width="245" valign="top"><p align="center" class="bodytext">$3</p></td>
-		</tr>
-		<tr>
-		<td width="347" valign="top"><p class="bodytext">Boat and Motor Rental (hour)</p></td>
-		<td width="169" valign="top"><p align="center" class="bodytext">$12</p></td>
-		<td width="245" valign="top"><p align="center" class="bodytext">$18</p></td>
-		</tr>
-		<tr>
-		<td height="17" valign="top" class="bodytext">Boat and Motor Rental (day)</td>
-		<td valign="top" class="bodytext"><div align="center">$36</div></td>
-		<td valign="top" class="bodytext"><div align="center">$54</div></td>
-		</tr>
-		<tr>
-		<td height="17" valign="top"><span class="bodytext">Canoe and Kayak Rental (hour)</span></td>
-		<td valign="top"><div align="center"><span class="bodytext">$4</span></div></td>
-		<td valign="top"><div align="center"><span class="bodytext">$6</span></div></td>
-		</tr>
-		<tr class="bodytext">
-		<td valign="top">Each additional 15 minutes</td>
-		<td valign="top"><div align="center">$1</div></td>
-		<td valign="top"><div align="center">$1</div></td>
-		</tr>
-		<tr class="bodytext">
-		<td valign="top">Canoe/Kayak Rental (daily)</td>
-		<td valign="top"><div align="center">$20</div></td>
-		<td valign="top"><div align="center">$30</div></td>
-		</tr>
+  		<th colspan=3>CRP Boat/Ramp Rental Fees</th>
+  		<tr>
+    		<td width="347" valign="top"><p>&nbsp;</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext"><strong>Resident</strong></p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext"><strong>Nonresident</strong></p></td>
+  		</tr>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Boat Launch (annual)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$75</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$100</p></td>
+  		</tr>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Boat Launch (semi-annual)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$40</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$60</p></td>
+  		</tr>
+  		<tr>
+    		<td valign="top"><span class="bodytext">Boat Launch</span></td>
+    		<td valign="top"><div align="center" class="bodytext">$5</div></td>
+    		<td valign="top"><div align="center" class="bodytext">$8</div></td>
+  		</tr>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Canoe and Kayak Launch</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$2</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$3</p></td>
+  		</tr>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Boat and Motor Rental (hour)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$12</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$18</p></td>
+  		</tr>
+  		<tr>
+    		<td height="17" valign="top" class="bodytext">Boat and Motor Rental (day)</td>
+    		<td valign="top" class="bodytext"><div align="center">$36</div></td>
+    		<td valign="top" class="bodytext"><div align="center">$54</div></td>
+  		</tr>
+  		<tr>
+    		<td height="17" valign="top"><span class="bodytext">Canoe and Kayak Rental (hour)</span></td>
+    		<td valign="top"><div align="center"><span class="bodytext">$4</span></div></td>
+    		<td valign="top"><div align="center"><span class="bodytext">$6</span></div></td>
+  		</tr>
+  		<tr class="bodytext">
+    		<td valign="top">Each additional 15 minutes</td>
+    		<td valign="top"><div align="center">$1</div></td>
+    		<td valign="top"><div align="center">$1</div></td>
+  		</tr>
+  		<tr class="bodytext">
+    		<td valign="top">Canoe/Kayak Rental (daily)</td>
+    		<td valign="top"><div align="center">$20</div></td>
+    		<td valign="top"><div align="center">$30</div></td>
+  		</tr>
 		</table>
 		<br>
 		<h2>Extra amenities</h2>
 		<p>We also have a driving range, and shelters that can be reserved.  Fishing off our pier is free.</p>
 		<table width="75%" border="1" cellpadding="0" cellspacing="0" bordercolor="#669933">
-		<th colspan=3>Driving Range Fees</th>
-		<tr>
-		<td width="38%"  valign="top"><p>&nbsp;</p></td>
-		<td width="30%"  valign="top"><p align="center"><strong>Resident</strong></p></td>
-		<td width="32%"  valign="top"><p align="center"><strong>Nonresident</strong></p></td>
-		</tr>
-		<tr>
-		<td height="19"  valign="top"><p>Bucket of Balls</p></td>
-		<td  valign="top"><p align="center">$4</p></td>
-		<td  valign="top"><p align="center">$5</p></td>
-		</tr>
-		<tr>
-		<td  valign="top"><p>Club</p></td>
-		<td  valign="top"><p align="center">$1</p></td>
-		<td valign="top"><p align="center">$2</p></td>
-		</tr>
-		<tr>
-		<td  colspan="3" valign="top"><p>&nbsp;</p></td>
-		</tr>
-		<th colspan=3>Fishing Pier Fees</th>
-		<tr>
-		<td  valign="top"><p>&nbsp;</p></td>
-		<td  valign="top"><p align="center"><strong>Resident</strong></p></td>
-		<td  valign="top"><p align="center"><strong>Nonresident</strong></p></td>
-		</tr>
-		<tr>
-		<td  valign="top"><p>Pier Fishing (24 hours/day)</p></td>
-		<td  valign="top"><p align="center">Free</p></td>
-		<td valign="top"><p align="center">Free</p></td>
-		</tr>
-		<tr>
-		<td colspan="3" valign="top"><p>&nbsp;</p></td>
-		</tr>
-		<th colspan=3>Shelter Rental Fees</th>
-		<tr>
-		<td valign="top"><p>(Capacity)</p></td>
-		<td valign="top"><p align="center"><strong>Resident</strong></p></td>
-		<td valign="top"><p align="center"><strong>Nonresident</strong></p></td>
-		</tr>
-		<tr>
-		<td valign="top"><p>Woods shelter - full day (100)</p></td>
-		<td valign="top"><p align="center">$100</p></td>
-		<td valign="top"><p align="center">$125</p></td>
-		</tr>
-		<tr>
-		<td valign="top"><p>Woods shelter- half day (100)</p></td>
-		<td valign="top"><p align="center">$75</p></td>
-		<td valign="top"><p align="center">$100</p></td>
-		</tr>
-		<tr>
-		<td valign="top"><p>Pool pavilion - full day (75)</p></td>
-		<td valign="top"><p align="center">$100</p></td>
-		<td valign="top"><p align="center">$125</p></td>
-		</tr>
-		<tr>
-		<td valign="top"><p>Pool pavilion - half day (75) </p></td>
-		<td valign="top"><p align="center">$75</p></td>
-		<td valign="top"><p align="center">$100</p></td>
-		</tr>
-		<tr>
-		<td colspan="3" valign="top"><p>&nbsp;</p>
-		  <p>25 percent discount for local non-profit organizations (James City County/Williamsburg) with proof of non-profit status.</p>
-		  <p></p>
-		  <p>&nbsp;</p>
-		  <p>For more information on shelter reservations, please visit the <u><a href="../rent-a-space.html">Rent a Space</a></u> page.</p>
-		  <p>&nbsp;</p>
-		  <p></p></td>
-		</tr>
+  		<th colspan=3>Driving Range Fees</th>
+  		<tr>
+    		<td width="38%"  valign="top"><p>&nbsp;</p></td>
+    		<td width="30%"  valign="top"><p align="center"><strong>Resident</strong></p></td>
+    		<td width="32%"  valign="top"><p align="center"><strong>Nonresident</strong></p></td>
+  		</tr>
+  		<tr>
+    		<td height="19"  valign="top"><p>Bucket of Balls</p></td>
+    		<td  valign="top"><p align="center">$4</p></td>
+    		<td  valign="top"><p align="center">$5</p></td>
+  		</tr>
+  		<tr>
+    		<td  valign="top"><p>Club</p></td>
+    		<td  valign="top"><p align="center">$1</p></td>
+    		<td valign="top"><p align="center">$2</p></td>
+  		</tr>
+  		<tr>
+  		  <td  colspan="3" valign="top"><p>&nbsp;</p></td>
+  		</tr>
+  		<th colspan=3>Fishing Pier Fees</th>
+  		<tr>
+    		<td  valign="top"><p>&nbsp;</p></td>
+    		<td  valign="top"><p align="center"><strong>Resident</strong></p></td>
+    		<td  valign="top"><p align="center"><strong>Nonresident</strong></p></td>
+  		</tr>
+  		<tr>
+    		<td  valign="top"><p>Pier Fishing (24 hours/day)</p></td>
+    		<td  valign="top"><p align="center">Free</p></td>
+    		<td valign="top"><p align="center">Free</p></td>
+  		</tr>
+  		<tr>
+  		  <td colspan="3" valign="top"><p>&nbsp;</p></td>
+  		</tr>
+  		<th colspan=3>Shelter Rental Fees</th>
+  		<tr>
+    		<td valign="top"><p>(Capacity)</p></td>
+    		<td valign="top"><p align="center"><strong>Resident</strong></p></td>
+    		<td valign="top"><p align="center"><strong>Nonresident</strong></p></td>
+  		</tr>
+  		<tr>
+    		<td valign="top"><p>Woods shelter - full day (100)</p></td>
+    		<td valign="top"><p align="center">$100</p></td>
+    		<td valign="top"><p align="center">$125</p></td>
+  		</tr>
+  		<tr>
+    		<td valign="top"><p>Woods shelter- half day (100)</p></td>
+    		<td valign="top"><p align="center">$75</p></td>
+    		<td valign="top"><p align="center">$100</p></td>
+  		</tr>
+  		<tr>
+    		<td valign="top"><p>Pool pavilion - full day (75)</p></td>
+    		<td valign="top"><p align="center">$100</p></td>
+    		<td valign="top"><p align="center">$125</p></td>
+  		</tr>
+  		<tr>
+    		<td valign="top"><p>Pool pavilion - half day (75) </p></td>
+    		<td valign="top"><p align="center">$75</p></td>
+    		<td valign="top"><p align="center">$100</p></td>
+  		</tr>
+  		<tr>
+  		  <td colspan="3" valign="top"><p>&nbsp;</p>
+  		  <p>25 percent discount for local non-profit organizations (James City County/Williamsburg) with proof of non-profit status.</p>
+  		  <p></p>
+  		  <p>&nbsp;</p>
+  		  <p>For more information on shelter reservations, please visit the <u><a href="../rent-a-space.html">Rent a Space</a></u> page.</p>
+  		  <p>&nbsp;</p>
+  		  <p></p></td>
+  		</tr>
 		</table>
 		<br>
 		<h2>Camping</h2>
 		<p>For more information on camping see the camping tab.</p>
 		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
-		<th colspan=3>Camping Fees</th>
-		<tr>
-		<td width="213" valign="top" class="bodytext">&nbsp;</td>
-		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Basic</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$22</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$26</div></td>
-		</tr>
-		<tr>
-		<td valign="top" class="bodytext">Basic Water Access</td>
-		<td valign="top" class="bodytext"><div align="center">$24</div></td>
-		<td valign="top" class="bodytext"><div align="center">$28</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$24</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$28</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Water/Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$26</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$30</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Prime Water/Electric</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$32</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$36</div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">Prime Water/Electric/Sewer</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$38</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$42</div></td>
-		</tr>
-		<tr>
-		<td height="20" valign="top" class="bodytext">Monthly, September - April</td>
-		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
-		<td valign="top" class="bodytext">&nbsp;</td>
-		</tr>
+  		<th colspan=3>Camping Fees</th>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Basic</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$22</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$26</div></td>
+  		</tr>
+  		<tr>
+    		<td valign="top" class="bodytext">Basic Water Access</td>
+    		<td valign="top" class="bodytext"><div align="center">$24</div></td>
+    		<td valign="top" class="bodytext"><div align="center">$28</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$24</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$28</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Water/Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$26</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$30</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Prime Water/Electric</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$32</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$36</div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">Prime Water/Electric/Sewer</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$38</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$42</div></td>
+  		</tr>
+  		<tr>
+    		<td height="20" valign="top" class="bodytext">Monthly, September - April</td>
+    		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
+    		<td valign="top" class="bodytext">&nbsp;</td>
+  		</tr>
 		</table>
 	</div><!End Rentals and Fees content>
 	<div id= "tabContent3" class="tabContent">
@@ -608,17 +606,17 @@ function displayImages(){
 		<p class="bodytext">
 		Do you have an RV or boat and you  need a place to store it? &nbsp;Look no further than Chickahominy Riverfront  Park! The park offers year-round storage opportunities within a fenced  environment with secure gate access. Call or drop by and we&rsquo;ll be happy to answer  any questions and give you a tour of the facility.  Storage is available  by the month, just $65/month; and save even more if you&rsquo;re a James City  County/Williamsburg resident, just $45/month. For more information, please  call&nbsp;757-258-5020.&nbsp;</p>
 		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
-		<th colspan=3>Boat Storage Fees</th>
-		<tr>
-		<td width="213" valign="top" class="bodytext">&nbsp;</td>
-		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
-		</tr>
-		<tr>
-		<td width="213" valign="top" class="bodytext">&nbsp;</td>
-		<td width="229" valign="top" class="bodytext"><div align="center">$45 per month</div></td>
-		<td width="127" valign="top" class="bodytext"><div align="center">$65 per month</div></td>
-		</tr>
+  		<th colspan=3>Boat Storage Fees</th>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
+  		</tr>
+  		<tr>
+    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$45 per month</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$65 per month</div></td>
+  		</tr>
 		</table>
 	</div><!End of Boat and RV Storage tab>
 	<div id= "tabContent6" class="tabContent">
@@ -627,10 +625,10 @@ function displayImages(){
 		<p class="bodytext">Fishing tournaments held at  Chickahominy Riverfront Park may be deemed a special event&nbsp;if it meets any  of the following criteria: </p>
 		<p>&nbsp;</p>
 		<ul class="red-ul">
-		<li>Banners, flyers, logos, posters, sponsorships, or any other form  of advertisement will be on display &nbsp; </li>
-		<li>A trailer and/or other form of weigh station will be used&nbsp; </li>
-		<li>Use of a designated campsite as a weigh area for&nbsp;30&nbsp;or more boats </li>
-		<li>Use of any park amenity or space that goes  beyond&nbsp;intended use as determined by James City County Parks and  Recreation&nbsp;&nbsp;</li>
+  		<li>Banners, flyers, logos, posters, sponsorships, or any other form  of advertisement will be on display &nbsp; </li>
+  		<li>A trailer and/or other form of weigh station will be used&nbsp; </li>
+  		<li>Use of a designated campsite as a weigh area for&nbsp;30&nbsp;or more boats </li>
+  		<li>Use of any park amenity or space that goes  beyond&nbsp;intended use as determined by James City County Parks and  Recreation&nbsp;&nbsp;</li>
 		</ul>
 		<p class="bodytext"><br>
 		Tournaments meeting any of  the above criteria may be reserved up to 12 months in advance of the scheduled  event. &nbsp;For more information and/or to&nbsp;schedule a special event  fishing tournament, please call Stephanie DeBord at 757-259-5360.  &nbsp;Organizers must complete a&nbsp;<a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Forms-all/ParkUsePermit.pdf" target="_blank">Park Use Permit Application</a>.  &nbsp;&nbsp;&nbsp;
@@ -640,9 +638,9 @@ function displayImages(){
 		<p class="bodytext">Standard fishing tournaments  are not considered a special event if: </p>
 		<p>&nbsp;</p>
 		<ul class="red-ul">
-		<li>None of the criteria is met for a special event </li>
-		<li>Weigh-in is conducted in the boat trailer parking lot on a table  no larger than 72&rdquo; x 30&rdquo;. &nbsp;Please note that the table must be adjacent to  one of the boat trailers participating in the tournament. </li>
-		<li>Use of a designated campsite as a weigh area for&nbsp;29&nbsp;or fewer boats. </li>
+  		<li>None of the criteria is met for a special event </li>
+  		<li>Weigh-in is conducted in the boat trailer parking lot on a table  no larger than 72&rdquo; x 30&rdquo;. &nbsp;Please note that the table must be adjacent to  one of the boat trailers participating in the tournament. </li>
+  		<li>Use of a designated campsite as a weigh area for&nbsp;29&nbsp;or fewer boats. </li>
 		</ul>
 		<p>&nbsp; </p>
 		<p class="bodytext">Tournaments meeting any of  the above criteria may reserve a designated campsite up to 60 days&nbsp;in  advance of the scheduled event. &nbsp;For more&nbsp;information and/or to  reserve a campsite for a standard fishing tournament, please call Chickahominy  Riverfront Park at 757-258-5020. </p>
