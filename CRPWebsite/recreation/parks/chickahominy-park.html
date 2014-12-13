@@ -46,10 +46,10 @@ img.bdr-grn1 {
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
+
   ga('create', 'UA-2193662-20', 'jamescitycountyva.gov');
   ga('send', 'pageview');
-  
+
   ga('create', 'UA-2193662-8', 'jamescitycountyva.gov');
   ga('send', 'pageview');
 
@@ -61,8 +61,8 @@ img.bdr-grn1 {
 </head>
 <body>
 <!--noindex begin--><a href="#maincontent"><img src="../../images/bullets/bullet_trans.gif" alt="Skip Navigation and go to Main Content" width="1" height="1" border="0" class="hiddenpict"></a>
-<div id="crumb"> 
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+<div id="crumb">
+  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
   <script type="text/javascript">
   google.load('search', '1');
   google.setOnLoadCallback(function() {
@@ -78,11 +78,11 @@ img.bdr-grn1 {
       <input type="hidden" name="cof" value="FORID:10" />
       <input type="hidden" name="ie" value="UTF-8" />
       <input type="text" name="q"  id="q" autocomplete="on" size="25" />
-      <input alt="Search" type="image" src="../../images/buttons/new-search-2-c.gif"  
+      <input alt="Search" type="image" src="../../images/buttons/new-search-2-c.gif"
 				 class="srcbut-new" name="sa" value="Search" title="Click to start Search" >
     </div>
   </form>
-  <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script> 
+  <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
   <a href="../../index.html">Home</a> &raquo; <a href="../../government/departments.html">Departments &amp; Services</a> &raquo; <a href="../index.html">Parks &amp; Recreation</a> &raquo; <!-- InstanceBeginEditable name="breadcrumb" --><a href="index.html">Parks</a> &raquo; Chickahominy Park<!-- InstanceEndEditable --> </div>
 <!-- end crumb -->
 
@@ -208,7 +208,17 @@ h2{
 #allTabButtons{
 	clear:both;
 	margin-top:10px;
-	margin-bottom-10px;
+}
+/*Remove #tabButton1 and #tabContent1 styles and reset var activeTabNum to 1 in
+  to display no tabs on start script*/
+#tabButton1{
+  background-color:#73C5F6;
+  border-bottom-color:#73C5F6;
+  border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+#tabContent1{
+  display:block;
 }
 .tabButton{
 	display:inline-block;
@@ -254,7 +264,6 @@ h2{
 .tabContent th{
 	background-color:#017AC3;
 	color:white;
-	colspan:0;
 }
 .tabContent h2{
 	color:black;
@@ -266,7 +275,8 @@ h2{
 <!--May need to be moved to it's own file-->
 <script>
 
-var activeTabNum=0;
+//Set to 0 and change #tabContent1 + #tabButton1 css rule to display:none to start with all closed tabs
+var activeTabNum=1;
 function tabClick(num){
 	if(num!==activeTabNum){
 		if(activeTabNum!==0){
@@ -357,7 +367,7 @@ function displayImages(){
 	<div id="tabButton6" class="tabButton" onclick="tabClick(6)"><p>Fishing Tournamants</p></div>
 	<div id= "tabContent1" class="tabContent">
 		<h2>Camping</h2>
-		<p  class="bodytext">Chickahominy Riverfront Park features 161  campsites located on a bluff, above water.&nbsp;  Several camp sites have scenic views of the waterfront and ten basic tent sites have water access.&nbsp; Check-in time<strong> is 1 p.m. or later, check-out time is before 11  a.m.&nbsp; </strong> You may reserve a campsite up to 60 
+		<p  class="bodytext">Chickahominy Riverfront Park features 161  campsites located on a bluff, above water.&nbsp;  Several camp sites have scenic views of the waterfront and ten basic tent sites have water access.&nbsp; Check-in time<strong> is 1 p.m. or later, check-out time is before 11  a.m.&nbsp; </strong> You may reserve a campsite up to 60
 		days in advance.&nbsp;Camping reservations are made by calling the park  office at 757-258-5020.</span></p>
 		<p>&nbsp;</p>
 		<p class="bodytext">You must reside in James City County or Williamsburg to qualify for the resident rate.</p>
@@ -584,7 +594,7 @@ function displayImages(){
 		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
 		<td valign="top" class="bodytext">&nbsp;</td>
 		</tr>
-		</table>	
+		</table>
 	</div><!End Rentals and Fees content>
 	<div id= "tabContent3" class="tabContent">
 		<h2>Rules</h2>
@@ -623,7 +633,7 @@ function displayImages(){
 		<li>Use of any park amenity or space that goes  beyond&nbsp;intended use as determined by James City County Parks and  Recreation&nbsp;&nbsp;</li>
 		</ul>
 		<p class="bodytext"><br>
-		Tournaments meeting any of  the above criteria may be reserved up to 12 months in advance of the scheduled  event. &nbsp;For more information and/or to&nbsp;schedule a special event  fishing tournament, please call Stephanie DeBord at 757-259-5360.  &nbsp;Organizers must complete a&nbsp;<a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Forms-all/ParkUsePermit.pdf" target="_blank">Park Use Permit Application</a>.  &nbsp;&nbsp;&nbsp; 
+		Tournaments meeting any of  the above criteria may be reserved up to 12 months in advance of the scheduled  event. &nbsp;For more information and/or to&nbsp;schedule a special event  fishing tournament, please call Stephanie DeBord at 757-259-5360.  &nbsp;Organizers must complete a&nbsp;<a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Forms-all/ParkUsePermit.pdf" target="_blank">Park Use Permit Application</a>.  &nbsp;&nbsp;&nbsp;
 		<p>&nbsp;</p>
 		<h2>Fishing  Tournaments (Standard)</h2>
 		<p align="center">&nbsp;</p>
@@ -646,25 +656,25 @@ function displayImages(){
 *
 *
 *
---> 
+-->
       <!-- InstanceEndEditable --></div>
     <!--end main main content-->
-    
+
     <div id="foundation"><p>The Official Site of James City County, Virginia<br>
           <a href="../../news/e-subscribe.html">e-Subscribe</a>| <a href="../../contact/index.html">Contact Us</a> | <a href="../../citizens/how-do-i-find.html">How do I?</a> | <a href="http://www.jamescitycountyva.gov/epayment/">e-Payment</a><br>
-          <a href="../../search/privacy-policy.html">Privacy Practices and Security Policy</a></p> 
+          <a href="../../search/privacy-policy.html">Privacy Practices and Security Policy</a></p>
            <p class="footer">James City Government Center &middot; 101 Mounts Bay Road &middot; Williamsburg, VA 23185</p></div>
 </div>
-  <!--foundations--> 
+  <!--foundations-->
   </div>
-  <!--wrapper--> 
+  <!--wrapper-->
 </div>
 <!--end content -->
 
- 
+
    </div>
   <!--mobile-->
- 
+
 
 <map name="TextSize">
   <area shape="rect" coords="0,0,17,39" href="#" onclick="setActiveStyleSheet('normal'); return false;" title="Set text size to normal">
