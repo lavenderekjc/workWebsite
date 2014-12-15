@@ -178,8 +178,18 @@ img.bdr-grn1 {
 -->
 <!-- This maybe needs to be moved into the appropriate .css file -->
 <style>
-h2{
+#crpMain h2{
 	color:#072752;
+}
+#crpMain table,tr,td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color:#CFFFE7;
+}
+#crpMain th{
+  border: 2px solid black;
+  background-color:#017AC3;
+  color:white;
 }
 #crpSidebar{
 	float:right;
@@ -216,6 +226,7 @@ h2{
   border-bottom-color:#73C5F6;
   border-bottom-left-radius:0px;
 	border-bottom-right-radius:0px;
+	cursor:default;
 }
 #tabContent1{
   display:block;
@@ -269,6 +280,9 @@ h2{
 .tabContent a{
 	font-weight: bold;
 }
+.tabContent li{
+  margin-left:15px;
+}
 </style>
 
 <!--May need to be moved to its own file-->
@@ -285,6 +299,7 @@ function tabClick(num){
 			activeTab.style.backgroundColor="#017AC3";
 			activeTab.style.borderBottomColor="black";
 			activeTab.style.color="white";
+			activeTab.style.cursor="pointer";
 		}
 		document.getElementById("tabContent"+num).style.display="block";
 		document.getElementById("tabButton"+num).style.borderBottomRightRadius="0px";
@@ -292,6 +307,7 @@ function tabClick(num){
 		document.getElementById("tabButton"+num).style.backgroundColor="#73C5F6";
 		document.getElementById("tabButton"+num).style.borderBottomColor="#73C5F6";
 		document.getElementById("tabButton"+num).style.color="black";
+		document.getElementById("tabButton"+num).style.cursor="default";
 		activeTabNum=num;
   }
 }
@@ -332,8 +348,9 @@ function displayImages(){
 <p class="bodytext">Come enjoy this 140-acre park located on  the Chickahominy River.&nbsp; This park has something for every member of your  family to  enjoy.&nbsp; Facilities include two outdoor swimming pools, boat  ramp, fishing pier, camp sites, a playground, picnic shelters, a small store  and access to the Virginia Capital Trail.&nbsp; You can bring your own boat or  rent one at the park to enjoy fishing or exploring the Chickahominy River and  Gordon Creek.&nbsp; There is&nbsp;space&nbsp;for monthly rental of boat and RV storage. The large fields and picnic shelters are available for  special events.
 </p>
 <br>
-<table width="65%" border="1" align="center" cellpadding="0" cellspacing="0">
-	<th style="background-color:#017AC3; color:white;" colspan=3>Store Hours</th>
+<div id="crpMain">
+<table>
+	<th colspan="2">Store Hours</th>
 	<tr>
   	<td ><p align="left" class="bodytext">October    1, 2014 &ndash; May 21, 2015</p></td>
   	<td width="50%"><p align="center" class="bodytext">8 a.m. &ndash;    5 p.m.</p></td>
@@ -372,8 +389,8 @@ function displayImages(){
 		<p><strong>&nbsp;</strong></p>
 		<a href="../../pdf/parksrecpdfs/Maps-all/CRPParkmap.pdf" target="_blank">Campground Map</a>
 		<br><br>
-		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
-  		<th colspan=3>Store Hours</th>
+		<table>
+  		<th colspan=3>Camping Fees</th>
   		<tr>
     		<td width="213" valign="top" class="bodytext">&nbsp;</td>
     		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
@@ -421,7 +438,7 @@ function displayImages(){
 		<h2>Boat Rentals</h2>
 		<p class="bodytext">
 		Canoes,   kayaks and jon boats are available for rent at Chickahominy Riverfront Park.&nbsp; There is a two-hour minimum for all boat rentals, and rentals must be returned at least 90 minutes before the store closes. To rent a boat, you will need to visit the park store for a rental agreement, complete the agreement and pay the rental fee.&nbsp; Our staff will  set up  your boat which includes all necessary equipment, such as life jackets, oars, and  paddles.&nbsp;</p>
-		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
+		<table>
   		<th colspan=3>CRP Boat/Ramp Rental Fees</th>
   		<tr>
     		<td width="347" valign="top"><p>&nbsp;</p></td>
@@ -477,7 +494,7 @@ function displayImages(){
 		<br>
 		<h2>Extra amenities</h2>
 		<p>We also have a driving range, and shelters that can be reserved.  Fishing off our pier is free.</p>
-		<table width="75%" border="1" cellpadding="0" cellspacing="0" bordercolor="#669933">
+		<table>
   		<th colspan=3>Driving Range Fees</th>
   		<tr>
     		<td width="38%"  valign="top"><p>&nbsp;</p></td>
@@ -550,7 +567,7 @@ function displayImages(){
 		<br>
 		<h2>Camping</h2>
 		<p>For more information on camping see the camping tab.</p>
-		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
+		<table>
   		<th colspan=3>Camping Fees</th>
   		<tr>
     		<td width="213" valign="top" class="bodytext">&nbsp;</td>
@@ -605,15 +622,13 @@ function displayImages(){
 		<h2>Boat and RV Storage</h2>
 		<p class="bodytext">
 		Do you have an RV or boat and you  need a place to store it? &nbsp;Look no further than Chickahominy Riverfront  Park! The park offers year-round storage opportunities within a fenced  environment with secure gate access. Call or drop by and we&rsquo;ll be happy to answer  any questions and give you a tour of the facility.  Storage is available  by the month, just $65/month; and save even more if you&rsquo;re a James City  County/Williamsburg resident, just $45/month. For more information, please  call&nbsp;757-258-5020.&nbsp;</p>
-		<table width="75%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#669933">
+		<table>
   		<th colspan=3>Boat Storage Fees</th>
   		<tr>
-    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
     		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
     		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
   		</tr>
   		<tr>
-    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
     		<td width="229" valign="top" class="bodytext"><div align="center">$45 per month</div></td>
     		<td width="127" valign="top" class="bodytext"><div align="center">$65 per month</div></td>
   		</tr>
@@ -624,7 +639,7 @@ function displayImages(){
 		<p align="center" class="bodytext">&nbsp;</p>
 		<p class="bodytext">Fishing tournaments held at  Chickahominy Riverfront Park may be deemed a special event&nbsp;if it meets any  of the following criteria: </p>
 		<p>&nbsp;</p>
-		<ul class="red-ul">
+		<ul>
   		<li>Banners, flyers, logos, posters, sponsorships, or any other form  of advertisement will be on display &nbsp; </li>
   		<li>A trailer and/or other form of weigh station will be used&nbsp; </li>
   		<li>Use of a designated campsite as a weigh area for&nbsp;30&nbsp;or more boats </li>
@@ -637,7 +652,7 @@ function displayImages(){
 		<p align="center">&nbsp;</p>
 		<p class="bodytext">Standard fishing tournaments  are not considered a special event if: </p>
 		<p>&nbsp;</p>
-		<ul class="red-ul">
+		<ul>
   		<li>None of the criteria is met for a special event </li>
   		<li>Weigh-in is conducted in the boat trailer parking lot on a table  no larger than 72&rdquo; x 30&rdquo;. &nbsp;Please note that the table must be adjacent to  one of the boat trailers participating in the tournament. </li>
   		<li>Use of a designated campsite as a weigh area for&nbsp;29&nbsp;or fewer boats. </li>
@@ -647,6 +662,7 @@ function displayImages(){
 		<p>&nbsp;</p>
 	</div><!End fishing tournament content>
 </div><!end allTabButtons>
+</div><!end crpMain>
 </div><!end maincontent>
 <!--  New stuff end
 *
