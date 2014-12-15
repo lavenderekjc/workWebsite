@@ -182,11 +182,15 @@ img.bdr-grn1 {
 	color:#072752;
 }
 #crpMain table,tr,td{
+  padding-left:5px;
+  padding-right:5px;
   border: 2px solid black;
   border-collapse: collapse;
   background-color:#CFFFE7;
 }
 #crpMain th{
+  padding-left:5px;
+  padding-right:5px;
   border: 2px solid black;
   background-color:#017AC3;
   color:white;
@@ -287,7 +291,6 @@ img.bdr-grn1 {
 
 <!--May need to be moved to its own file-->
 <script>
-//Set to 0 and change #tabContent1 + #tabButton1 css rule to display:none to start with all closed tabs
 var activeTabNum=1;
 function tabClick(num){
 	if(num!==activeTabNum){
@@ -375,11 +378,11 @@ function displayImages(){
 <hr>
 <div id="allTabButtons">
 	<div id="tabButton1" class="tabButton" onclick="tabClick(1)"><p>Camping</p></div>
-	<div id="tabButton2" class="tabButton" onclick="tabClick(2)"><p>Rental Fees</p></div>
-	<div id="tabButton3" class="tabButton" onclick="tabClick(3)"><p>Rules</p></div>
-	<div id="tabButton4" class="tabButton" onclick="tabClick(4)"><p>Frequent Questions</p></div>
+	<div id="tabButton2" class="tabButton" onclick="tabClick(2)"><p>Rules</p></div>
+	<div id="tabButton3" class="tabButton" onclick="tabClick(3)"><p>Boat Ramp and Rental Fees</p></div>
+	<div id="tabButton4" class="tabButton" onclick="tabClick(4)"><p>Fishing Tournamants</p></div>
 	<div id="tabButton5" class="tabButton" onclick="tabClick(5)"><p>Boat and RV Storage</p></div>
-	<div id="tabButton6" class="tabButton" onclick="tabClick(6)"><p>Fishing Tournamants</p></div>
+	<div id="tabButton6" class="tabButton" onclick="tabClick(6)"><p>Photos</p></div>
 	<div id= "tabContent1" class="tabContent">
 		<h2>Camping</h2>
 		<p  class="bodytext">Chickahominy Riverfront Park features 161  campsites located on a bluff, above water.&nbsp;  Several camp sites have scenic views of the waterfront and ten basic tent sites have water access.&nbsp; Check-in time<strong> is 1 p.m. or later, check-out time is before 11  a.m.&nbsp; </strong> You may reserve a campsite up to 60
@@ -434,36 +437,34 @@ function displayImages(){
 		</table>
 		<br>
 	</div> <!End Camping content>
-	<div id= "tabContent2" class="tabContent">
+		<div id= "tabContent2" class="tabContent">
+		<h2>Rules</h2>
+		<a href="../../pdf/parksrecpdfs/Flyers-all/CRPrulesandfeeshandoutOct2014.pdf" target="_blank">Park Rules</a>
+	</div><!End Rules div>
+	<div id= "tabContent3" class="tabContent">
 		<h2>Boat Rentals</h2>
-		<p class="bodytext">
-		Canoes,   kayaks and jon boats are available for rent at Chickahominy Riverfront Park.&nbsp; There is a two-hour minimum for all boat rentals, and rentals must be returned at least 90 minutes before the store closes. To rent a boat, you will need to visit the park store for a rental agreement, complete the agreement and pay the rental fee.&nbsp; Our staff will  set up  your boat which includes all necessary equipment, such as life jackets, oars, and  paddles.&nbsp;</p>
+		<p>Enjoy nature at its finest by renting one of our jon boats, canoes, or kayaks to explore Gordon Creek, Morris Creek, and the Chickahominy River. Rentals are available starting 8 a.m. (Want to get this changed to 9) and must be returned 90 minutes prior to the store closing. There is a two-hour minimum for all boat rentals. Canoe and kayak rentals are on a first-come, first-served basis and jon boats can be reserved one day in advance with a $10 non-refundable deposit. Canoes and kayaks users must be 16 years or older. Operators of a jon boat must be 18 years or older. Rentals of canoes, kayaks and jon boats may be suspended due to weather and/or staffing issues and when the water temperature is not above 58 degrees.</p>
 		<table>
-  		<th colspan=3>CRP Boat/Ramp Rental Fees</th>
+  		<th colspan=3>Boat Rental Fees</th>
   		<tr>
     		<td width="347" valign="top"><p>&nbsp;</p></td>
     		<td width="169" valign="top"><p align="center" class="bodytext"><strong>Resident</strong></p></td>
     		<td width="245" valign="top"><p align="center" class="bodytext"><strong>Nonresident</strong></p></td>
   		</tr>
   		<tr>
-    		<td width="347" valign="top"><p class="bodytext">Boat Launch (annual)</p></td>
-    		<td width="169" valign="top"><p align="center" class="bodytext">$75</p></td>
-    		<td width="245" valign="top"><p align="center" class="bodytext">$100</p></td>
+    		<td height="17" valign="top"><span class="bodytext">Canoe and Kayak Rental (hour)</span></td>
+    		<td valign="top"><div align="center"><span class="bodytext">$4*</span></div></td>
+    		<td valign="top"><div align="center"><span class="bodytext">$6*</span></div></td>
   		</tr>
-  		<tr>
-    		<td width="347" valign="top"><p class="bodytext">Boat Launch (semi-annual)</p></td>
-    		<td width="169" valign="top"><p align="center" class="bodytext">$40</p></td>
-    		<td width="245" valign="top"><p align="center" class="bodytext">$60</p></td>
+  		<tr class="bodytext">
+    		<td valign="top">*Each additional 15 minutes</td>
+    		<td valign="top"><div align="center">$1</div></td>
+    		<td valign="top"><div align="center">$1</div></td>
   		</tr>
-  		<tr>
-    		<td valign="top"><span class="bodytext">Boat Launch</span></td>
-    		<td valign="top"><div align="center" class="bodytext">$5</div></td>
-    		<td valign="top"><div align="center" class="bodytext">$8</div></td>
-  		</tr>
-  		<tr>
-    		<td width="347" valign="top"><p class="bodytext">Canoe and Kayak Launch</p></td>
-    		<td width="169" valign="top"><p align="center" class="bodytext">$2</p></td>
-    		<td width="245" valign="top"><p align="center" class="bodytext">$3</p></td>
+  		<tr class="bodytext">
+    		<td valign="top">Canoe/Kayak Rental (daily)</td>
+    		<td valign="top"><div align="center">$20</div></td>
+    		<td valign="top"><div align="center">$30</div></td>
   		</tr>
   		<tr>
     		<td width="347" valign="top"><p class="bodytext">Boat and Motor Rental (hour)</p></td>
@@ -475,25 +476,41 @@ function displayImages(){
     		<td valign="top" class="bodytext"><div align="center">$36</div></td>
     		<td valign="top" class="bodytext"><div align="center">$54</div></td>
   		</tr>
+		</table>
+		<br>
+		<h2>Boat Ramp</h2>
+		<p>The boat ramp at Chickahominy Riverfront Park is able to accommodate four boats being launched simultaneously. Once launched you will be in Gordon Creek and just a short distance from the Chickahominy River and James River too. Daily, semi-annual and annual ramp passes are good for one boat only. </p>
+		<table>
+		  <th colspan=3>Boat Ramp Fees</th>
+		  <tr>
+    		<td width="347" valign="top"><p>&nbsp;</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext"><strong>Resident</strong></p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext"><strong>Nonresident</strong></p></td>
+  		</tr>
   		<tr>
-    		<td height="17" valign="top"><span class="bodytext">Canoe and Kayak Rental (hour)</span></td>
-    		<td valign="top"><div align="center"><span class="bodytext">$4</span></div></td>
-    		<td valign="top"><div align="center"><span class="bodytext">$6</span></div></td>
+    		<td width="347" valign="top"><p class="bodytext">Canoe and Kayak Launch (Daily)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$2</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$3</p></td>
   		</tr>
-  		<tr class="bodytext">
-    		<td valign="top">Each additional 15 minutes</td>
-    		<td valign="top"><div align="center">$1</div></td>
-    		<td valign="top"><div align="center">$1</div></td>
+  		<tr>
+    		<td valign="top"><span class="bodytext">Boat Launch (Daily)</span></td>
+    		<td valign="top"><div align="center" class="bodytext">$5</div></td>
+    		<td valign="top"><div align="center" class="bodytext">$8</div></td>
   		</tr>
-  		<tr class="bodytext">
-    		<td valign="top">Canoe/Kayak Rental (daily)</td>
-    		<td valign="top"><div align="center">$20</div></td>
-    		<td valign="top"><div align="center">$30</div></td>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Boat Launch (semi-annual)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$40</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$60</p></td>
+  		</tr>
+  		<tr>
+    		<td width="347" valign="top"><p class="bodytext">Boat Launch (annual)</p></td>
+    		<td width="169" valign="top"><p align="center" class="bodytext">$75</p></td>
+    		<td width="245" valign="top"><p align="center" class="bodytext">$100</p></td>
   		</tr>
 		</table>
 		<br>
-		<h2>Extra amenities</h2>
-		<p>We also have a driving range, and shelters that can be reserved.  Fishing off our pier is free.</p>
+		<h2>Driving Range</h2>
+		<p>Our driving range is open from 8 a.m. until 90 minutes prior to our store closing with the exceptions of when it is used to accommodate parking for a special event. You can hone your golf swing or just have fun. Clubs are available for rental. Please call in advance to ensure the range is open. </p>
 		<table>
   		<th colspan=3>Driving Range Fees</th>
   		<tr>
@@ -511,9 +528,11 @@ function displayImages(){
     		<td  valign="top"><p align="center">$1</p></td>
     		<td valign="top"><p align="center">$2</p></td>
   		</tr>
-  		<tr>
-  		  <td  colspan="3" valign="top"><p>&nbsp;</p></td>
-  		</tr>
+  		</table>
+  		<br>
+  		<h2>Fishing</h2>
+  		<p>Our fishing pier is open to the public 24 hours/day, 365 days/year. Weather events may cause the pier to be closed for safety reasons. There is no cost to fish of the pier but a fresh water fishing license is required. Visit the Department of Game and Inland Fisheries website to purchase a license. We also have a catch and release pond (no license required).</p>
+  		<table>
   		<th colspan=3>Fishing Pier Fees</th>
   		<tr>
     		<td  valign="top"><p>&nbsp;</p></td>
@@ -526,8 +545,15 @@ function displayImages(){
     		<td valign="top"><p align="center">Free</p></td>
   		</tr>
   		<tr>
-  		  <td colspan="3" valign="top"><p>&nbsp;</p></td>
+    		<td  valign="top"><p>Catch and release pond (sunrise to sunset)</p></td>
+    		<td  valign="top"><p align="center">Free</p></td>
+    		<td valign="top"><p align="center">Free</p></td>
   		</tr>
+  		</table>
+  		<br>
+  		<h2>Shelters</h2>
+  		<p>We have two shelters available for rental: one located near our pool and another next to our basic sites near the woods.  If a shelter is not reserved they are available on a first come, first serve basis.</p>
+  		<table>
   		<th colspan=3>Shelter Rental Fees</th>
   		<tr>
     		<td valign="top"><p>(Capacity)</p></td>
@@ -565,76 +591,8 @@ function displayImages(){
   		</tr>
 		</table>
 		<br>
-		<h2>Camping</h2>
-		<p>For more information on camping see the camping tab.</p>
-		<table>
-  		<th colspan=3>Camping Fees</th>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">&nbsp;</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
-  		</tr>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">Basic</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$22</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$26</div></td>
-  		</tr>
-  		<tr>
-    		<td valign="top" class="bodytext">Basic Water Access</td>
-    		<td valign="top" class="bodytext"><div align="center">$24</div></td>
-    		<td valign="top" class="bodytext"><div align="center">$28</div></td>
-  		</tr>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">Electric</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$24</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$28</div></td>
-  		</tr>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">Water/Electric</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$26</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$30</div></td>
-  		</tr>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">Prime Water/Electric</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$32</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$36</div></td>
-  		</tr>
-  		<tr>
-    		<td width="213" valign="top" class="bodytext">Prime Water/Electric/Sewer</td>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$38</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$42</div></td>
-  		</tr>
-  		<tr>
-    		<td height="20" valign="top" class="bodytext">Monthly, September - April</td>
-    		<td valign="top" class="bodytext"><p align="center">Call 757-258-5020 for rates</p></td>
-    		<td valign="top" class="bodytext">&nbsp;</td>
-  		</tr>
-		</table>
 	</div><!End Rentals and Fees content>
-	<div id= "tabContent3" class="tabContent">
-		<h2>Rules</h2>
-		<a href="../../pdf/parksrecpdfs/Flyers-all/CRPrulesandfeeshandoutOct2014.pdf" target="_blank">Park Rules</a>
-	</div><!End Rules div>
-	<div id= "tabContent4" class="tabContent">
-		<h2>Frequently Asked Questions</h2>
-	</div>
-	<div id= "tabContent5" class="tabContent">
-		<h2>Boat and RV Storage</h2>
-		<p class="bodytext">
-		Do you have an RV or boat and you  need a place to store it? &nbsp;Look no further than Chickahominy Riverfront  Park! The park offers year-round storage opportunities within a fenced  environment with secure gate access. Call or drop by and we&rsquo;ll be happy to answer  any questions and give you a tour of the facility.  Storage is available  by the month, just $65/month; and save even more if you&rsquo;re a James City  County/Williamsburg resident, just $45/month. For more information, please  call&nbsp;757-258-5020.&nbsp;</p>
-		<table>
-  		<th colspan=3>Boat Storage Fees</th>
-  		<tr>
-    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
-  		</tr>
-  		<tr>
-    		<td width="229" valign="top" class="bodytext"><div align="center">$45 per month</div></td>
-    		<td width="127" valign="top" class="bodytext"><div align="center">$65 per month</div></td>
-  		</tr>
-		</table>
-	</div><!End of Boat and RV Storage tab>
-	<div id= "tabContent6" class="tabContent">
+		<div id= "tabContent4" class="tabContent">
 		<h2>Fishing  Tournaments (Special Event)</h2>
 		<p align="center" class="bodytext">&nbsp;</p>
 		<p class="bodytext">Fishing tournaments held at  Chickahominy Riverfront Park may be deemed a special event&nbsp;if it meets any  of the following criteria: </p>
@@ -661,6 +619,25 @@ function displayImages(){
 		<p class="bodytext">Tournaments meeting any of  the above criteria may reserve a designated campsite up to 60 days&nbsp;in  advance of the scheduled event. &nbsp;For more&nbsp;information and/or to  reserve a campsite for a standard fishing tournament, please call Chickahominy  Riverfront Park at 757-258-5020. </p>
 		<p>&nbsp;</p>
 	</div><!End fishing tournament content>
+	<div id= "tabContent5" class="tabContent">
+		<h2>Boat and RV Storage</h2>
+		<p class="bodytext">
+		Do you have an RV or boat and you  need a place to store it? &nbsp;Look no further than Chickahominy Riverfront  Park! The park offers year-round storage opportunities within a fenced  environment with secure gate access. Call or drop by and we&rsquo;ll be happy to answer  any questions and give you a tour of the facility.  Storage is available  by the month, just $65/month; and save even more if you&rsquo;re a James City  County/Williamsburg resident, just $45/month. For more information, please  call&nbsp;757-258-5020.&nbsp;</p>
+		<table>
+  		<th colspan=3>Boat Storage Fees</th>
+  		<tr>
+    		<td width="229" valign="top" class="bodytext"><div align="center"><strong>Resident</strong></div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center"><strong>Nonresident</strong></div></td>
+  		</tr>
+  		<tr>
+    		<td width="229" valign="top" class="bodytext"><div align="center">$45 per month</div></td>
+    		<td width="127" valign="top" class="bodytext"><div align="center">$65 per month</div></td>
+  		</tr>
+		</table>
+	</div><!End of Boat and RV Storage tab>
+	<div id= "tabContent6" class="tabContent">
+		<h2>Photos</h2>
+	</div>
 </div><!end allTabButtons>
 </div><!end crpMain>
 </div><!end maincontent>
