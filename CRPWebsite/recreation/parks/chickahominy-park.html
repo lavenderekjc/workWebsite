@@ -231,6 +231,7 @@ img.bdr-grn1 {
   border-bottom-left-radius:0px;
 	border-bottom-right-radius:0px;
 	cursor:default;
+	color:black;
 }
 #tabContent1{
   display:block;
@@ -251,11 +252,15 @@ img.bdr-grn1 {
 	cursor: pointer;
 	position:relative;
 	z-index:1;
+	transition:background-color 1s,border-radius 1s, border-bottom-color 1s;
+}
+.tabButton:hover{
+  background-color:gray;
 }
 .tabButton p{
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle;
+  vertical-align: middle;
 	font-weight: bold;
 }
 .tabContent{
@@ -269,6 +274,7 @@ img.bdr-grn1 {
 	position:relative;
 	z-index:0;
 	top: -2px;
+
 }
 .tabContent table{
 	border-color:black;
@@ -312,6 +318,14 @@ function tabClick(num){
 		document.getElementById("tabButton"+num).style.color="black";
 		document.getElementById("tabButton"+num).style.cursor="default";
 		activeTabNum=num;
+  }
+}
+function tabHover(num,over){
+  if (num!==activeTabNum){
+    if (over===true)
+      document.getElementById("tabButton"+num).style.backgroundColor="#006A51";
+    if (over===false)
+      document.getElementById("tabButton"+num).style.backgroundColor="#017AC3";
   }
 }
 function displayImages(){
@@ -377,12 +391,12 @@ function displayImages(){
 <br><br>
 <hr>
 <div id="allTabButtons">
-	<div id="tabButton1" class="tabButton" onclick="tabClick(1)"><p>Camping</p></div>
-	<div id="tabButton2" class="tabButton" onclick="tabClick(2)"><p>Rules</p></div>
-	<div id="tabButton3" class="tabButton" onclick="tabClick(3)"><p>Boat Ramp and Rental Fees</p></div>
-	<div id="tabButton4" class="tabButton" onclick="tabClick(4)"><p>Fishing Tournamants</p></div>
-	<div id="tabButton5" class="tabButton" onclick="tabClick(5)"><p>Boat and RV Storage</p></div>
-	<div id="tabButton6" class="tabButton" onclick="tabClick(6)"><p>Photos</p></div>
+	<div id="tabButton1" class="tabButton" onclick="tabClick(1)" onmouseover="tabHover(1,true)" onmouseleave="tabHover(1,false)"><p>Camping</p></div>
+	<div id="tabButton2" class="tabButton" onclick="tabClick(2)" onmouseover="tabHover(2,true)" onmouseleave="tabHover(2,false)"><p>Rules</p></div>
+	<div id="tabButton3" class="tabButton" onclick="tabClick(3)" onmouseover="tabHover(3,true)" onmouseleave="tabHover(3,false)"><p>Boat Ramp and Rental Fees</p></div>
+	<div id="tabButton4" class="tabButton" onclick="tabClick(4)" onmouseover="tabHover(4,true)" onmouseleave="tabHover(4,false)"><p>Fishing Tournamants</p></div>
+	<div id="tabButton5" class="tabButton" onclick="tabClick(5)" onmouseover="tabHover(5,true)" onmouseleave="tabHover(5,false)"><p>Boat and RV Storage</p></div>
+	<div id="tabButton6" class="tabButton" onclick="tabClick(6)" onmouseover="tabHover(6,true)" onmouseleave="tabHover(6,false)"><p>Photos</p></div>
 	<div id= "tabContent1" class="tabContent">
 		<h2>Camping</h2>
 		<p  class="bodytext">Chickahominy Riverfront Park features 161  campsites located on a bluff, above water.&nbsp;  Several camp sites have scenic views of the waterfront and ten basic tent sites have water access.&nbsp; Check-in time<strong> is 1 p.m. or later, check-out time is before 11  a.m.&nbsp; </strong> You may reserve a campsite up to 60
