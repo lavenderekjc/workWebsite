@@ -221,6 +221,17 @@ img.bdr-grn1 {
 #usefulLinks li{
 	margin-left:20px;
 }
+#mapImg{
+  position:fixed;
+  top:0px;
+  left:0px;
+  margin-left:5%;
+  margin-right:5%;
+  width:90%;
+  height:100%;
+  z-index:2;
+  display:none;
+}
 #allTabButtons{
 	clear:both;
 	margin-top:10px;
@@ -302,6 +313,12 @@ img.bdr-grn1 {
 <!--May need to be moved to its own file-->
 <script>
 var activeTabNum=1;
+function mapSelect(selected){
+  if(selected===true)
+    document.getElementById("mapImg").style.display="block";
+  if(selected===false)
+    document.getElementById("mapImg").style.display="none";
+}
 function tabClick(num){
 	if(num!==activeTabNum){
 		if(activeTabNum!==0){
@@ -395,7 +412,8 @@ function displayImages(){
 </table>
 <br>
 <h2>Campground Map</h2>
-<a href="../../pdf/parksrecpdfs/Maps-all/CRPParkmap.pdf" target="_blank"><img width="45%" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img></a>
+<img id="mapImg" onclick="mapSelect(false);" style="cursor:pointer;" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img>
+<img onclick="mapSelect(true);" style="cursor:pointer;" width="45%" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img>
 <br><br>
 <hr>
 <div id="allTabButtons">
@@ -412,7 +430,7 @@ function displayImages(){
 		<p>&nbsp;</p>
 		<p class="bodytext">You must reside in James City County or Williamsburg to qualify for the resident rate.</p>
 		<p><strong>&nbsp;</strong></p>
-		<a href="../../pdf/parksrecpdfs/Maps-all/CRPParkmap.pdf" target="_blank">Campground Map</a>
+		<a href="javascript:void(0)" onclick="mapSelect(true);">Campground Map</a>
 		<br><br>
 		<table>
   		<th colspan=3>Camping Fees</th>
