@@ -206,21 +206,6 @@ img.bdr-grn1 {
 	width:270px;;
 	display:none;
 }
-#usefulLinks{
-  alignment:center;
-	background-color:#CFFFE7;
-	border-radius: 10px;
-	border-color:black;
-	border-style:solid;
-	border-width:2px;
-	padding: 10px;
-}
-#usefulLinks h2{
-  text-align: center;
-}
-#usefulLinks li{
-	margin-left:20px;
-}
 #mapImg{
   position:fixed;
   top:0px;
@@ -236,8 +221,6 @@ img.bdr-grn1 {
 	clear:both;
 	margin-top:10px;
 }
-/*Remove #tabButton1 and #tabContent1 styles and reset var activeTabNum to 1 in
-  to display no tabs on start script*/
 #tabButton1{
   background-color:#73C5F6;
   border-bottom-color:#73C5F6;
@@ -375,18 +358,8 @@ function displayImages(){
 		<img src="../../images/recreation/Chickahominy Riverfront Park/chickahominyStorm.jpg"></img>
 		<img src="../../images/recreation/Chickahominy Riverfront Park/storageArea.jpg"></img>
 	</div>
-	<br><br>
-	<div id="usefulLinks">
-  	<h2>Useful Links</h2>
-  	<ul>
-    	<li><a href="../../pdf/parksrecpdfs/Flyers-all/rangerpub web page 2012.pdf" target="_blank">Find a Park Ranger</a></li>
-    	<li><a href="http://www.jamescitycountyva.gov/recreation/parks/parks-facilities.html" target="_blank">Park Finder</a></li>
-    	<li><a href="http://www.jamescitycountyva.gov/recreation/rent-a-space.html" target="_blank">Shelter Reservations</a></li>
-    	<li><a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Flyers-all/AdoptAParkBrochure-Sept2014.pdf" target="_blank">Adopt-A-Park</a></li>
-    	<li><a href="../../redirect/redirect.php?l=http://www.williamsburgboatclub.org" target="_blank" rel="nofollow" >Williamsburg Boat Club</a></li>
-    	<li><a href="http://forecast.weather.gov/MapClick.php?lat=37.26098763377337&lon=-76.70833595583889&site=all&smap=1#.VJBOr9LF_wE" >NOAA Weather</a></li>
-  	</ul>
-	</div>
+	<br>
+  <img width="270px" height="330px" src="../../images/recreation/Chickahominy Riverfront Park/adoptAPark.jpg"></img>
 </div>
 <div id="crpMain">
 <p class="bodytext">Come enjoy this 140-acre park located on  the Chickahominy River.&nbsp; This park has something for every member of your  family to  enjoy.&nbsp; Facilities include two outdoor swimming pools, boat  ramp, fishing pier, camp sites, a playground, picnic shelters, a small store  and access to the Virginia Capital Trail.&nbsp; You can bring your own boat or  rent one at the park to enjoy fishing or exploring the Chickahominy River and  Gordon Creek.&nbsp; There is&nbsp;space&nbsp;for monthly rental of boat and RV storage. The large fields and picnic shelters are available for  special events.
@@ -412,9 +385,9 @@ function displayImages(){
 	</tr>
 </table>
 <br>
-<h2>Campground Map</h2>
+<h2 style="text-align:center">Campground Map</h2><p style="text-align:center;pointer-events: none;height:0px; position: relative; top:20px; z-index:1;">(click to enlarge)</p>
 <img id="mapImg" onclick="mapSelect(false);" style="cursor:pointer;" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img>
-<img onclick="mapSelect(true);" style="cursor:pointer;" width="45%" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img>
+<img onclick="mapSelect(true);" style="cursor:pointer;display: block; margin-left: auto; margin-right: auto" width="50%" src="../../images/recreation/Chickahominy Riverfront Park/campgroundMap.jpg"></img>
 <br><br>
 <hr>
 <div id="allTabButtons">
@@ -423,7 +396,7 @@ function displayImages(){
 	<div id="tabButton3" class="tabButton" onclick="tabClick(3)" onmouseover="tabHover(3,true)" onmouseleave="tabHover(3,false)"><p>Boat Ramp and Rental Fees</p></div>
 	<div id="tabButton4" class="tabButton" onclick="tabClick(4)" onmouseover="tabHover(4,true)" onmouseleave="tabHover(4,false)"><p>Fishing Tournamants</p></div>
 	<div id="tabButton5" class="tabButton" onclick="tabClick(5)" onmouseover="tabHover(5,true)" onmouseleave="tabHover(5,false)"><p>Boat and RV Storage</p></div>
-	<div id="tabButton6" class="tabButton" onclick="tabClick(6)" onmouseover="tabHover(6,true)" onmouseleave="tabHover(6,false)"><p>Photos</p></div>
+	<div id="tabButton6" class="tabButton" onclick="tabClick(6)" onmouseover="tabHover(6,true)" onmouseleave="tabHover(6,false)"><p>Useful Links</p></div>
 	<div id= "tabContent1" class="tabContent">
 		<h2>Camping</h2>
 		<p  class="bodytext">Chickahominy Riverfront Park features 161  campsites located on a bluff, above water.&nbsp;  Several camp sites have scenic views of the waterfront and ten basic tent sites have water access.&nbsp; Check-in time<strong> is 1 p.m. or later, check-out time is before 11  a.m.&nbsp; </strong> You may reserve a campsite up to 60
@@ -750,7 +723,15 @@ function displayImages(){
 		</table>
 	</div><!End of Boat and RV Storage tab>
 	<div id= "tabContent6" class="tabContent">
-		<h2>Photos</h2>
+	  <h2>Useful Links</h2>
+		<ul>
+    	<li><a href="../../pdf/parksrecpdfs/Flyers-all/rangerpub web page 2012.pdf" target="_blank">Find a Park Ranger</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/recreation/parks/parks-facilities.html" target="_blank">Park Finder</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/recreation/rent-a-space.html" target="_blank">Shelter Reservations</a></li>
+    	<li><a href="http://www.jamescitycountyva.gov/pdf/parksrecpdfs/Flyers-all/AdoptAParkBrochure-Sept2014.pdf" target="_blank">Adopt-A-Park</a></li>
+    	<li><a href="../../redirect/redirect.php?l=http://www.williamsburgboatclub.org" target="_blank" rel="nofollow" >Williamsburg Boat Club</a></li>
+    	<li><a href="http://forecast.weather.gov/MapClick.php?lat=37.26098763377337&lon=-76.70833595583889&site=all&smap=1#.VJBOr9LF_wE" >NOAA Weather</a></li>
+  	</ul>
 	</div>
 </div><!end allTabButtons>
 </div><!end crpMain>
