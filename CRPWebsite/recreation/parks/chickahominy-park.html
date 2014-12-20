@@ -232,6 +232,7 @@ img.bdr-grn1 {
 }
 #tabContent1{
   display:block;
+  opacity:1;
 }
 .tabButton{
 	display:inline-block;
@@ -268,9 +269,11 @@ img.bdr-grn1 {
 	background-color:#73C5F6;
 	display:none;
 	padding:15px;
+	margin-bottom:10px;
 	position:relative;
 	top: -2px;
-
+	opacity:0;
+  transition:opacity 1s;
 }
 .tabContent table{
 	border-color:black;
@@ -307,6 +310,7 @@ function tabClick(num){
 	if(num!==activeTabNum){
 		if(activeTabNum!==0){
 			document.getElementById("tabContent"+activeTabNum).style.display="none";
+			document.getElementById("tabContent"+num).style.opacity="0"
 			var activeTab=document.getElementById("tabButton"+activeTabNum);
 			activeTab.style.borderBottomRightRadius=activeTab.style.borderTopRightRadius;
 			activeTab.style.borderBottomLeftRadius=activeTab.style.borderTopRightRadius;
@@ -316,6 +320,7 @@ function tabClick(num){
 			activeTab.style.cursor="pointer";
 		}
 		document.getElementById("tabContent"+num).style.display="block";
+		setTimeout(function(){document.getElementById("tabContent"+num).style.opacity="1"}, 1);
 		document.getElementById("tabButton"+num).style.borderBottomRightRadius="0px";
 		document.getElementById("tabButton"+num).style.borderBottomLeftRadius="0px";
 		document.getElementById("tabButton"+num).style.backgroundColor="#73C5F6";
