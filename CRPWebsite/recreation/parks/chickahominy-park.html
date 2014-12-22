@@ -314,17 +314,16 @@ function mapSelect(selected){
 }
 function tabClick(num){
 	if(num!==activeTabNum){
-		if(activeTabNum!==0){
-			document.getElementById("tabContent"+activeTabNum).style.display="none";
-			document.getElementById("tabContent"+num).style.opacity="0"
-			var activeTab=document.getElementById("tabButton"+activeTabNum);
-			activeTab.style.borderBottomRightRadius=activeTab.style.borderTopRightRadius;
-			activeTab.style.borderBottomLeftRadius=activeTab.style.borderTopRightRadius;
-			activeTab.style.backgroundColor="#017AC3";
-			activeTab.style.borderBottomColor="black";
-			activeTab.style.color="white";
-			activeTab.style.cursor="pointer";
-		}
+		document.getElementById("tabContent"+activeTabNum).style.display="none";
+		document.getElementById("tabContent"+num).style.opacity="0"
+		var activeTab=document.getElementById("tabButton"+activeTabNum);
+		activeTab.style.borderBottomRightRadius=activeTab.style.borderTopRightRadius;
+		activeTab.style.borderBottomLeftRadius=activeTab.style.borderTopRightRadius;
+		activeTab.style.backgroundColor="#017AC3";
+		activeTab.style.borderBottomColor="black";
+		activeTab.style.color="white";
+		activeTab.style.cursor="pointer";
+
 		document.getElementById("tabContent"+num).style.display="block";
 		setTimeout(function(){document.getElementById("tabContent"+num).style.opacity="1"}, 1);
 		document.getElementById("tabButton"+num).style.borderBottomRightRadius="0px";
